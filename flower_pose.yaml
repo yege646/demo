@@ -1,0 +1,13 @@
+# flower_pose.yaml
+# 数据集配置
+path: G:/yolov8_pose/datasets/  # 数据集根目录
+train: images/train
+val: images/val
+test: images/test
+
+# 类别配置（简化为单类别）
+nc: 1                 # 类别数：只有 'rose' 这一种花
+names: ['rose']
+
+# 关键点配置（YOLOv8-Pose 必需）
+kpt_shape: [9, 3]     # 你的关键点形状：[9 个点, (x, y, v) 共 3 个维度]
